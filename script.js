@@ -1,8 +1,8 @@
 // script.js
 document.addEventListener('DOMContentLoaded', function() {
     const apiKey = '4zu9L9j8FY3DrXrlUV28SqO1gnTPmksPsCH0KrYyvjdOFKTfq2DYBGBd';
-    const keywords = ['nature', 'city', 'space', 'ocean']; // Массив ключевых слов для поиска
-    let query = keywords[Math.floor(Math.random() * keywords.length)]; // Выбор случайного ключевого слова
+    const keywords = ['nature', 'city', 'space', 'ocean']; 
+    let query = keywords[Math.floor(Math.random() * keywords.length)]; 
     let apiUrl = `https://api.pexels.com/v1/search?query=${query}&per_page=1`;
     const imageElement = document.getElementById('random-photo');
     const photographerName = document.getElementById('photographer-name');
